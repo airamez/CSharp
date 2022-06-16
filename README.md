@@ -17,7 +17,7 @@ Dictionary<int,string> dic = new();
 ```
 
 ## Array slicing
-```
+```c#
     int[] nums = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
     WriteLine(nums[^1]); // Last element
@@ -34,4 +34,14 @@ Dictionary<int,string> dic = new();
     int[] midElements = nums[3..6];
     Array.ForEach(midElements, n => Write(n));
     WriteLine();
+```
+
+## Expression-bodied methods
+```c#
+public class CSharp {
+  public static void Main(string[] args) {
+    WriteLine(Now());
+  }
+  static string Now() => DateTime.Now.ToLongDateString();
+}
 ```
